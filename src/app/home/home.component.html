@@ -1,0 +1,22 @@
+<h1>Welcome!</h1>
+
+<div class="play-container">
+    <p> You've clicked <span (click)="countAClick()">this</span> {{clickCounter}} times.</p>
+    <p> You've clicked <span (hover)="countAClick()">this</span> {{clickCounter}} times.</p>
+</div>
+
+<div class="play-container">
+    <p>
+        <input type="text" [(ngModel)]="name"><br>
+        <strong> you said: </strong> {{name}}
+    </p>
+</div>
+
+<div class="play-container">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+        <p>The click counter is greater than 4</p>
+    </ng-template>
+    <ng-template #none>
+        <p>the click counter is <strong>NOT</strong> greater than 4.</p>
+    </ng-template>
+</div>
