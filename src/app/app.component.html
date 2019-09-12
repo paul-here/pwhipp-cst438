@@ -3,15 +3,13 @@
     <a routerLink="/" class="logo">The Store</a>
     <!-- I want to make a Nav bar component and put it here -- how do I do that? -->
     <nav>
-      <ul>
-        <li><a href="#" routerLink="/">Home</a></li>
-        <li><a href="#" routerLink="/products">Products</a></li>
-      </ul>
+      <app-shopnav></app-shopnav>
     </nav>
   </div>
 </header>
 
 <div class="container">
-  <!-- I think I want to put outlet my 'home' component here, does that make sense? -->
+  <!-- I think I want to outlet my 'home' component here, does that make sense? -->
+  <!-- Or should i build out my home here in html? -->
   <router-outlet></router-outlet>
 </div>
