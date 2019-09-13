@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'itemdetails', component: ItemdetailsComponent},
-  { path: 'productlist', component: ProductlistComponent },
+  { path: 'productlist', component: ProductlistComponent }, // renamed product to productlist
   { path: 'thanks', component: ThanksComponent },
   { path: 'login', component: LoginComponent }
 ];

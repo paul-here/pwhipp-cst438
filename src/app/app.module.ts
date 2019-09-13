@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// Material-Angular reqs
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +28,11 @@ import { ShopnavComponent } from './shopnav/shopnav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Material-Angular reqs
+    BrowserAnimationsModule, 
+    MatButtonModule, 
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
