@@ -1,30 +1,140 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+$primary: black;
+
 body {
+    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
+    font-size: 24px;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), white);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
 }
 
-header{
-    background-color: lightgrey;
-    padding: 10px;
+header {
+    background: $primary;
+    padding: 2em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+            }
+        }
+    }
 }
 
-.spacer{
-    padding: 5%;
-}
-
-.docs-navbar-header {
-    padding: 10px 30px 10px 30px;
-}
-
-a {
-    text-decoration: none;
+.spacer {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 a:hover {
     text-decoration-line: underline;
-    size: 1em;
-    background-color: yellow;
+    font-weight: bold;
+}
+
+
+.splashimg {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.whiteCard {
+    height: 714px;
+    //margin-top: -24px;
+    padding-top: 24px;
+}
+
+.tiles {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.productCard {
+    height: 300px;
+    width: 200px;
+    padding-top: 25px;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(110, 110, 110));
+    border-radius: 5px;
+}
+
+.productImage {
+    background-color: azure;
+    margin-left: 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#loginDiv {
+    margin: 0 auto;
+    padding: 25px;
+    border-width: 10px;
+    border-color: black;
+    //border-style: solid;
+    border-radius: 5px;
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(110, 110, 110));
+    color: white;
+}
+
+.productName {
+    color: white;
+    font-size: .75em;
+    padding-left: 25px;
+}
+
+.productPrice {
+    color: white;
+    font-size: .5em;
+    font-style: italic;
+    padding-left: 25px;
+}
+
+.hr {
+    width: 100%;
+    margin: 25px;
+    height: 5px;
+    background-color: black;
+}
+
+.math {
+    text-align: right;
+    font-size: .75em;
+}
+
+#final {
+    text-decoration: underline;
+}
+
+#checkoutBtn {
+    float: right;
+}
+
+#total {
+    text-align: right;
 }
