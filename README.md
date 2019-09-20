@@ -34,3 +34,6 @@ The navigation bar is implemented as a separate component, which should make mod
 ### Product Cards
 The product cards are implemented as a separate component, and can be changed without affecting the rest of the site. They need a details link and data.
 
+## Review Notes
+ - Check code for misplaced elements from pasted snippets
+ - Break SCSS into each component, instead of clumped at the highest level
