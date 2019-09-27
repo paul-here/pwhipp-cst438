@@ -8,13 +8,15 @@ import { ItemdetailsComponent } from './itemdetails/itemdetails.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'itemdetails', component: ItemdetailsComponent},
-  { path: 'productlist', component: ProductlistComponent }, // renamed product to productlist
+  { path: 'productlist', component: ProductlistComponent },
   { path: 'thanks', component: ThanksComponent },
   { path: 'login', component: LoginComponent }
 ];
