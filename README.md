@@ -23,7 +23,7 @@ The home page is currently a single image which looks good with the black and wh
 The Product page dynamically tiles product cards into the available space on the page. Currently, the number of cards is fixed at ten, and when the screen cannot accommodate that many tiles, they are not handled correctly. This will be fixed by changing the number of active tiles.
 
 ### Checkout page
-The checkout page is currently displaying four product cards as an example, but it needs to handle any number of purchased items in sensible manner. 
+The checkout page is currently displaying four product cards as an example, but it needs to handle any number of purchased items in sensible manner. This page now has nonfunctional form fields for customer information. More fields may need to be added, and of course they need to be wired. 
 
 ### Login page
 The login page design needs to be reworked, and of course, it currently does not have functionality. 
@@ -34,6 +34,13 @@ The navigation bar is implemented as a separate component, which should make mod
 ### Product Cards
 The product cards are implemented as a separate component, and can be changed without affecting the rest of the site. They need a details link and data.
 
+### Cart Page
+The original checkout page is not the Cart page. It needs options for removal or items, or increasing quantity. It has two items as an example, but the spacing is awkward. 
+
+### Finalize Page
+Perhaps incorrectly named, this component shows an order confirmation. It is wired correctly, but lacks design. 
+
 ## Review Notes
  - Check code for misplaced elements from pasted snippets
  - Break SCSS into each component, instead of clumped at the highest level
+

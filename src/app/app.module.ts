@@ -16,6 +16,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { ShopnavComponent } from './shopnav/shopnav.component';
 import { ProductcardComponent } from './productcard/productcard.component';
 import { CartComponent } from './cart/cart.component';
+import { FinalizeComponent } from './finalize/finalize.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CartComponent } from './cart/cart.component';
     ThanksComponent,
     ShopnavComponent,
     ProductcardComponent,
-    CartComponent
+    CartComponent,
+    FinalizeComponent
   ],
   imports: [
     BrowserModule,

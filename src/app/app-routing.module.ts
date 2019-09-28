@@ -9,10 +9,12 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
+import { FinalizeComponent } from './finalize/finalize.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'finalize', component: FinalizeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'itemdetails', component: ItemdetailsComponent},
